@@ -1,0 +1,8 @@
+PSoC-Creator/*.arh
+*~
+PSoC-Creator/*.cydsn/Cortex*/*
+PSoC-Creator/*.cydsn/Export/*
+PSoC-Creator/*.cydsn/Generated_Source
+PSoC-Creator/*.cydsn/codegentemp
+
+

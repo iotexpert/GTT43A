@@ -1,0 +1,122 @@
+Project Report:BasicTest
+
+Screen (Screen1)
+	Script: BasicTest\Screen1\Screen1.bin
+		Run Script: 254 93 Script(ASCII String)
+	Button (GTT2.5) (Circle_Button_1)
+		ObjectID: 1
+		TextValue: GTT25
+		Label_Foreground_RGB: 238, 240, 242
+		Return for Circle_Button_1 Events: 252 235 Return Byte Length EventID ObjectID EventType
+			- Parameter Name (Data Type): Description
+			EventPrefix (U16): 252 235
+			ReturnLength (U16): Return Byte Length
+			EventID (U16): 5376
+			ObjectID (U16): 1
+			EventType (U8): Up = 0, Down = 1
+		Get Circle_Button_1__Text: 254 250 1 11 0 1 21 3 
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 11
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 3
+		Return for Get Circle_Button_1__Text: 252 250 Return Byte Length 1 11 eStatusCode eTextEncoding String Byte Length Value String 
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 11
+			Gtt25CommandStatus (U8): eStatusCode
+			Value_StringType (U8): eTextEncoding
+			- eTextEncoding: Unicode = 0, ASCII = 1, UTF-8 = 2
+			Value_ByteLength (U16): String Byte Length
+			Value (U8[]): Value String
+		Set Circle_Button_1__Text: 254 250 1 10 0 1 21 3 eTextEncoding String Byte Length Value String 
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 10
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 3
+			Value_StringType (U8): eTextEncoding
+			- eTextEncoding: Unicode = 0, ASCII = 1, UTF-8 = 2
+			Value_ByteLength (U16): String Byte Length
+			Value (U8[]): Value String
+		Return for Set Circle_Button_1__Text: 252 250 Return Byte Length 1 10 eStatusCode 
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 10
+			Gtt25CommandStatus (U8): eStatusCode
+		Get Circle_Button_1__ForegroundR: 254 250 1 5 0 1 21 5 
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 5
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 5
+		Return for Get Circle_Button_1__ForegroundR: 252 250 Return Byte Length 1 5 eStatusCode  
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 5
+			Gtt25CommandStatus (U8): eStatusCode
+			Value (U8): 
+		Set Circle_Button_1__ForegroundR: 254 250 1 4 0 1 21 5  
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 4
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 5
+			Value (U8): 
+		Return for Set Circle_Button_1__ForegroundR: 252 250 Return Byte Length 1 4 eStatusCode 
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 4
+			Gtt25CommandStatus (U8): eStatusCode
+		Get Circle_Button_1__ForegroundG: 254 250 1 5 0 1 21 6 
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 5
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 6
+		Return for Get Circle_Button_1__ForegroundG: 252 250 Return Byte Length 1 5 eStatusCode  
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 5
+			Gtt25CommandStatus (U8): eStatusCode
+			Value (U8): 
+		Set Circle_Button_1__ForegroundG: 254 250 1 4 0 1 21 6  
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 4
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 6
+			Value (U8): 
+		Return for Set Circle_Button_1__ForegroundG: 252 250 Return Byte Length 1 4 eStatusCode 
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 4
+			Gtt25CommandStatus (U8): eStatusCode
+		Get Circle_Button_1__ForegroundB: 254 250 1 5 0 1 21 7 
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 5
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 7
+		Return for Get Circle_Button_1__ForegroundB: 252 250 Return Byte Length 1 5 eStatusCode  
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 5
+			Gtt25CommandStatus (U8): eStatusCode
+			Value (U8): 
+		Set Circle_Button_1__ForegroundB: 254 250 1 4 0 1 21 7  
+			- Parameter Name (Data Type): Description
+			CommandPrefix (FixedDec): 254 250 1 4
+			ObjectID (U16): 0 1
+			PropertyID (U16): 21 7
+			Value (U8): 
+		Return for Set Circle_Button_1__ForegroundB: 252 250 Return Byte Length 1 4 eStatusCode 
+			- Parameter Name (Data Type): Description
+			ReturnPrefix (U16): 252 250
+			ReturnLength (U16): Return Byte Length
+			Gtt25CommandID (U16): 1 4
+			Gtt25CommandStatus (U8): eStatusCode
+	Button - Legacy (Circle_Button_2)
+		ObjectID: 2
+		Label_Text_RGB: 238, 240, 242
+		Button_RGB: 93, 93, 93

@@ -1,0 +1,17 @@
+SetDefaultChannel(None);
+SetBaudRate(115200);
+SetFlowControl(RTSCTS);
+SetI2CAddress(80);
+SetControlCharacterMode(Unix);
+SetDebounceTime(64);
+SetKeyAutoTX(On);
+SetAutoRepeat(Hold);
+SetBacklight(255);
+ChangeReportingStyle(RegionDown);
+InputBeep(OutputBeep| OutputMotor| InputTouch,1100,700);
+SetDefaultBuzzerBeep(1100,100);
+Font_SetAutoCacheSizeLimit(262144);
+GTT25BaseObject_Create(Font,8);
+GTT25BaseObject_SetPropertyU8(8,GTT25BaseObject_Protected,1);
+Font_Load(8,"BasicTest\Fonts\LibraSans\LibraSansModern.ttf");
+RunScript("BasicTest\Screen1\Screen1.bin");
