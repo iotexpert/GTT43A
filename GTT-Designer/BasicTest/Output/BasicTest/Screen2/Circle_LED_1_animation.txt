@@ -1,0 +1,4 @@
+50 \BasicTest\Screen2\Circle_LED_1_0.bmp
+50 \BasicTest\Screen2\Circle_LED_1_1.bmp
+50 \BasicTest\Screen2\Circle_LED_1_2.bmp
+50 \BasicTest\Screen2\Circle_LED_1_3.bmp

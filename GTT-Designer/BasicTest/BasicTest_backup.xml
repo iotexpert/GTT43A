@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GTTProject FileFormatRevision="104" ProjectName="BasicTest" Theme="Glossy" GTTProduct="GTT43A" StartScreenIndex="0" UseLoader="False" UseGlobalBitmaps="False" xmlns="clr-namespace:GTT.Project.Common;assembly=GTT.Project.Common" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+<GTTProject FileFormatRevision="104" FlowControl="Off" CommunicationChannel="I2C" ProjectName="BasicTest" Theme="Glossy" GTTProduct="GTT43A" StartScreenIndex="0" UseLoader="False" UseGlobalBitmaps="False" xmlns="clr-namespace:GTT.Project.Common;assembly=GTT.Project.Common" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <GTTProject.GlobalRegions>
     <RegionSlotCollection />
   </GTTProject.GlobalRegions>
@@ -68,7 +68,7 @@
         </Screen.Bitmaps>
         <Screen.Children>
           <GuiElementCollection>
-            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="True" ButtonFontString="Fonts\LibraSans\LibraSansModern.ttf" PreferedRegionID="1" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text="GTT25" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{x:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_1" Theme="(Project Default)" Top="84" Left="95" ZOrder="0" Width="100" Height="100">
+            <GuiButton25 FocusColour="#FFF02E2C" DisabledColour="#FFBABABF" HasFocus="False" ButtonIsEnabled="True" DownKeyID="69" CachedCharacters="" LockWidthHeight="True" ButtonFontString="Fonts\LibraSans\LibraSansModern.ttf" PreferedRegionID="1" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text="GTT25" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_1" Theme="(Project Default)" Top="76" Left="62" ZOrder="0" Width="100" Height="100">
               <GuiButton25.OnUpAction>
                 <GTTActionList />
               </GuiButton25.OnUpAction>
@@ -82,7 +82,66 @@
                 <ScriptAction />
               </GuiButton25.ActionScriptDown>
             </GuiButton25>
-            <GuiButton LockWidthHeight="True" ButtonFontString="Fonts\LibraSans\LibraSansModern.ttf" PreferedRegionID="2" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text="Button" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{x:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_2" Theme="(Project Default)" Top="82" Left="279" ZOrder="0" Width="100" Height="100">
+            <GuiButton LockWidthHeight="True" ButtonFontString="Fonts\LibraSans\LibraSansModern.ttf" PreferedRegionID="2" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text="Button" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_2" Theme="(Project Default)" Top="77" Left="323" ZOrder="0" Width="100" Height="100">
+              <GuiButton.OnUpAction>
+                <GTTActionList />
+              </GuiButton.OnUpAction>
+              <GuiButton.OnDownAction>
+                <GTTActionList />
+              </GuiButton.OnDownAction>
+              <GuiButton.ActionScriptUp>
+                <ScriptAction />
+              </GuiButton.ActionScriptUp>
+              <GuiButton.ActionScriptDown>
+                <ScriptAction />
+              </GuiButton.ActionScriptDown>
+            </GuiButton>
+          </GuiElementCollection>
+        </Screen.Children>
+      </Screen>
+      <Screen Name="Screen2">
+        <Screen.OnPreLoadAction>
+          <GTTActionList />
+        </Screen.OnPreLoadAction>
+        <Screen.OnPostLoadAction>
+          <GTTActionList />
+        </Screen.OnPostLoadAction>
+        <Screen.Regions>
+          <RegionSlotCollection />
+        </Screen.Regions>
+        <Screen.Keys>
+          <KeySlotCollection />
+        </Screen.Keys>
+        <Screen.LinkList>
+          <GTTLinkList />
+        </Screen.LinkList>
+        <Screen.BarGraphs>
+          <BarGraphSlotCollection />
+        </Screen.BarGraphs>
+        <Screen.Labels>
+          <LabelSlotCollection />
+        </Screen.Labels>
+        <Screen.Fonts>
+          <FontSlotCollection />
+        </Screen.Fonts>
+        <Screen.Traces>
+          <TraceSlotCollection />
+        </Screen.Traces>
+        <Screen.AnimationSlots>
+          <AnimationSlotCollection />
+        </Screen.AnimationSlots>
+        <Screen.AnimationInstances>
+          <AnimationInstanceCollection />
+        </Screen.AnimationInstances>
+        <Screen.NineSliceSlots>
+          <NineSliceSlotCollection />
+        </Screen.NineSliceSlots>
+        <Screen.Bitmaps>
+          <BitmapSlotCollection />
+        </Screen.Bitmaps>
+        <Screen.Children>
+          <GuiElementCollection>
+            <GuiButton LockWidthHeight="True" ButtonFontString="Fonts\libra-sans-modern\LibraSansModern.ttf" PreferedRegionID="-1" UseUpScreenLink="False" UseDownScreenLink="False" UpScreenIndex="0" DownScreenIndex="0" UseUpBuzzer="False" UseDownBuzzer="False" UseUpMotor="False" UseDownMotor="False" UpFrequency="500" DownFrequency="500" UpDuration="500" DownDuration="500" UseUpBrightness="False" UseDownBrightness="False" UpBrightness="255" DownBrightness="255" ImageStretch="Uniform" ImageAlignment="Center" CornerSize="1000" BorderSize="2" Text="Button" ButtonTextSize="12" TextColour="#FFEEF0F2" ButtonColour="#FF5D5D5D" Bitmap="{assembly:Null}" ImageTransparency="1" ImageScale="1" ToggleEnable="False" ElementName="Circle_Button_1" Theme="(Project Default)" Top="78" Left="118" ZOrder="0" Width="100" Height="100">
               <GuiButton.OnUpAction>
                 <GTTActionList />
               </GuiButton.OnUpAction>

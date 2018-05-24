@@ -1,0 +1,16 @@
+SetDefaultChannel(None);
+ClearAllScriptedKeys();
+ClearAllRegions();
+GTT25BaseObject_DestroyAll();
+SetManualFlush(Enable);
+LoadBitmap(0,"BasicTest\Screen2\Screen2_background.bmp");
+LoadBitmap(1,"BasicTest\Screen2\Circle_Button_1_up.bmp");
+LoadBitmap(2,"BasicTest\Screen2\Circle_Button_1_down.bmp");
+SetBackgroundDrawingColor(0,0,0);
+SetFontWindow(0,0,800,480);
+DisplayBitmap(0,0,0);
+SetupRegion(0,118,78,100,100,1,2);
+SetDefaultChannel(I2C);
+SetManualFlush(Disable);
+ManualFlush();
+GTT25BaseObject_ProcessChanges();

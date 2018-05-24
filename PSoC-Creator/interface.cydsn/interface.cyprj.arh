@@ -17,6 +17,8 @@
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
 <dep name=".\Generated_Source\PSoC4\I2C.h" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL.h" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
 <dep name=".\Generated_Source\PSoC4\I2C_I2C.h" />
 <dep name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
@@ -28,8 +30,17 @@
 <dep name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\I2C_sda.h" />
 <dep name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\UART.h" />
 <dep name=".\Generated_Source\PSoC4\UART_BOOT.h" />
 <dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
@@ -62,6 +73,8 @@
 <file name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <file name=".\Generated_Source\PSoC4\CyLib.h" />
 <file name=".\Generated_Source\PSoC4\I2C.h" />
+<file name=".\Generated_Source\PSoC4\I2CFAIL.h" />
+<file name=".\Generated_Source\PSoC4\I2CFAIL_aliases.h" />
 <file name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
 <file name=".\Generated_Source\PSoC4\I2C_I2C.h" />
 <file name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
@@ -73,8 +86,17 @@
 <file name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
 <file name=".\Generated_Source\PSoC4\I2C_sda.h" />
 <file name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
-<file name=".\Generated_Source\PSoC4\Pin_1.h" />
-<file name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_BOOT.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
 <file name=".\Generated_Source\PSoC4\UART.h" />
 <file name=".\Generated_Source\PSoC4\UART_BOOT.h" />
 <file name=".\Generated_Source\PSoC4\UART_PINS.h" />
@@ -172,6 +194,26 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\I2C.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\I2CFAIL.o">
+<dep name=".\Generated_Source\PSoC4\I2CFAIL.c" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL.h" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\I2CFAIL.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\I2CFAIL_PM.o">
+<dep name=".\Generated_Source\PSoC4\I2CFAIL.h" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL_PM.c" />
+<dep name=".\Generated_Source\PSoC4\I2CFAIL_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\I2CFAIL_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\I2C_BOOT.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
@@ -353,26 +395,196 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\I2C_sda_PM.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\Pin_1.o">
-<dep name=".\Generated_Source\PSoC4\Pin_1.c" />
-<dep name=".\Generated_Source\PSoC4\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\Pin_1.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\Pin_1_PM.o">
-<dep name=".\Generated_Source\PSoC4\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_1_PM.c" />
-<dep name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<file name=".\Generated_Source\PSoC4\SCRUART.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_BOOT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_BOOT.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\Pin_1_PM.c" />
+<file name=".\Generated_Source\PSoC4\SCRUART_BOOT.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PM.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SCBCLK.o">
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SPI_UART.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SPI_UART_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_INT.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_INT.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_UART.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_UART.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_UART.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_UART_BOOT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_UART_BOOT.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_UART_BOOT.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_rx.o">
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_rx.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_rx_PM.o">
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_PM.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_rx_PM.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_tx.o">
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_tx.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_tx_PM.o">
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_PM.c" />
+<dep name=".\Generated_Source\PSoC4\SCRUART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\SCRUART_tx_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\UART.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
@@ -612,6 +824,28 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC4\Pin_1.h" />
+<file name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Pin_1.o">
+<dep name=".\Generated_Source\PSoC4\Pin_1.c" />
+<dep name=".\Generated_Source\PSoC4\Pin_1.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Pin_1.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\Pin_1_PM.o">
+<dep name=".\Generated_Source\PSoC4\Pin_1.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_1_PM.c" />
+<dep name=".\Generated_Source\PSoC4\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Pin_1_PM.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
 <dep name=".\Generated_Source\PSoC4\cymetadata.c" />
 </file>
@@ -662,8 +896,20 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\CyDMA.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\CyLFClk.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\Pin_1.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\Pin_1_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SPI_UART.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SPI_UART_INT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_UART.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_BOOT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_UART_BOOT.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_SCBCLK.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_tx.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_tx_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_rx.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\SCRUART_rx_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\I2CFAIL.o" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\I2CFAIL_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\interface.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -717,6 +963,20 @@
 <name_val_pair name="Generated_Source\PSoC4\Pin_1.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\Pin_1_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="\\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\interface.cydsn\CortexM0\ARM_GCC_541\Debug\interface.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_SPI_UART_INT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_UART.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_tx.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_rx.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\SCRUART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2CFAIL.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2CFAIL_PM.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\arh\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\interface.cydsn\interface.cyprj -d CY8C4247AZI-M485 -s \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\interface.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -1026,13 +1286,40 @@
 <v>Generated_Source\PSoC4\Pin_1.h</v>
 <v>Generated_Source\PSoC4\Pin_1_aliases.h</v>
 <v>Generated_Source\PSoC4\Pin_1_PM.c</v>
+<v>Generated_Source\PSoC4\SCRUART.c</v>
+<v>Generated_Source\PSoC4\SCRUART.h</v>
+<v>Generated_Source\PSoC4\SCRUART_SPI_UART.h</v>
+<v>Generated_Source\PSoC4\SCRUART_SPI_UART.c</v>
+<v>Generated_Source\PSoC4\SCRUART_SPI_UART_INT.c</v>
+<v>Generated_Source\PSoC4\SCRUART_PM.c</v>
+<v>Generated_Source\PSoC4\SCRUART_UART.c</v>
+<v>Generated_Source\PSoC4\SCRUART_BOOT.c</v>
+<v>Generated_Source\PSoC4\SCRUART_UART_BOOT.c</v>
+<v>Generated_Source\PSoC4\SCRUART_PINS.h</v>
+<v>Generated_Source\PSoC4\SCRUART_SPI_UART_PVT.h</v>
+<v>Generated_Source\PSoC4\SCRUART_PVT.h</v>
+<v>Generated_Source\PSoC4\SCRUART_BOOT.h</v>
+<v>Generated_Source\PSoC4\SCRUART_SCBCLK.c</v>
+<v>Generated_Source\PSoC4\SCRUART_SCBCLK.h</v>
+<v>Generated_Source\PSoC4\SCRUART_tx.c</v>
+<v>Generated_Source\PSoC4\SCRUART_tx.h</v>
+<v>Generated_Source\PSoC4\SCRUART_tx_aliases.h</v>
+<v>Generated_Source\PSoC4\SCRUART_tx_PM.c</v>
+<v>Generated_Source\PSoC4\SCRUART_rx.c</v>
+<v>Generated_Source\PSoC4\SCRUART_rx.h</v>
+<v>Generated_Source\PSoC4\SCRUART_rx_aliases.h</v>
+<v>Generated_Source\PSoC4\SCRUART_rx_PM.c</v>
+<v>Generated_Source\PSoC4\I2CFAIL.c</v>
+<v>Generated_Source\PSoC4\I2CFAIL.h</v>
+<v>Generated_Source\PSoC4\I2CFAIL_aliases.h</v>
+<v>Generated_Source\PSoC4\I2CFAIL_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131706148600076675" />
+<deps_time v="131713975077421979" />
 <top_block v="TopDesign" />
 <last_generation v="2" />
 <pdl_path v="" />
@@ -1042,7 +1329,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131706148643492017" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131714121331904125" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

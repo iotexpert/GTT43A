@@ -8,6 +8,9 @@ uint8 clearCMD[] = { 0x58 };
 uint8 resetCMD[] = { 0x01};
 uint8 comI2CCMD[] = { 0x05, 0x02};
 uint8 comNONECMD[] = { 0x05, 0x00};
+uint8 comSERIALCMD[] = { 0x05, 0x01};
+uint8 comECHOCMD[] = {0xFF,'a','b','c', 0};
+
 
 #define I2CADDR (0x28)
 #define I2CTIMEOUT (0xFF)
@@ -16,10 +19,16 @@ typedef enum {
     MODE_IDLE,
     MODE_PACKET,
     MODE_STREAMING
-} i2cmode_t;
+} systemMode_t;
 
-i2cmode_t i2cpoling=MODE_IDLE;
+systemMode_t systemMode=MODE_IDLE;
 
+typedef enum {
+    INTERFACE_I2C,
+    INTERFACE_UART
+} cominterface_t;
+
+cominterface_t comInterface=INTERFACE_I2C;
 
 #define processPacketError(code,msg)  if(code != I2C_I2C_MSTR_NO_ERROR) \
     { \
@@ -29,7 +38,7 @@ i2cmode_t i2cpoling=MODE_IDLE;
 
 // writePacket 
 // This function sends a start packet, number of bytes, and then the actual data
-void writePacket(uint32 len, uint8 *data)
+void writePacketI2C(uint32 len, uint8 *data)
 {
     char *errorMsg;
     uint32_t returnCode;
@@ -50,14 +59,38 @@ void writePacket(uint32 len, uint8 *data)
     return;
     
     errorexit:
-    i2cpoling = MODE_IDLE;
+    systemMode = MODE_IDLE;
     sprintf(buff,"Write Packet: %s Error=%X\r\n",errorMsg,(unsigned int)returnCode);
     UART_UartPutString(buff);
     return;
     
 }
 
-void readPacket()
+void writePacketUart(uint32 len, uint8_t *data)
+{
+    SCRUART_UartPutChar(0xFE);
+    for(uint32_t i=0;i<len;i++)
+    {
+        SCRUART_UartPutChar(data[i]);
+    }
+}
+
+void writePacket(uint32 len,uint8_t *data)
+{
+    switch(comInterface)
+    {
+        case INTERFACE_I2C:
+        writePacketI2C(len,data);
+        break;
+        
+        case INTERFACE_UART:
+        writePacketUart(len,data);
+        break;
+    }
+}
+
+
+void readPacketI2C()
 {
     int length;
     int command;
@@ -71,7 +104,7 @@ void readPacket()
     // Something bad happened on the I2C Bus ....
     if(returncode)
     {
-        i2cpoling = MODE_IDLE; 
+        systemMode = MODE_IDLE; 
         sprintf(buff,"I2C Return Code %X\r\n",(unsigned int)returncode);
         UART_UartPutString(buff);
     }
@@ -87,7 +120,7 @@ void readPacket()
     {
         sprintf(buff,"bad data = %d\r\n",data);
         UART_UartPutString(buff);
-        i2cpoling = MODE_IDLE; // put it into nothing mode...
+        systemMode = MODE_IDLE; // put it into nothing mode...
         return;
     }
     
@@ -132,6 +165,22 @@ void readPacket()
     
 }
 
+void readPacketUART()
+{
+}
+
+void readPacket()
+{
+    switch(comInterface)
+    {
+        case INTERFACE_I2C:
+            readPacketI2C();
+        break;
+        case INTERFACE_UART:
+            readPacketUART();
+        break;
+    }
+}
 
 #define I2CPORTSEL CYREG_HSIOM_PORT_SEL3
 
@@ -139,7 +188,7 @@ void i2cReset()
 {
     uint32_t val;
 
-    sprintf(buff,"Reset I2C SCL\r\nMaking digitial i/o SCL Val=%x SCL=%d SDA=%d\r\n",(unsigned int)val,I2C_scl_Read(),I2C_sda_Read());
+    sprintf(buff,"Reset I2C SCL\r\nMaking digitial i/o SCL SCL=%d SDA=%d\r\n",I2C_scl_Read(),I2C_sda_Read());
     UART_UartPutString(buff);
 
     // This makes the portselect mux be set to 0 aka software digitial control
@@ -169,28 +218,107 @@ void i2cReset()
     UART_UartPutString(buff);
 }
 
+uint32_t readByteI2C(uint8_t *data)
+{
+    uint32 returncode;
+    returncode = I2C_I2CMasterSendStart(I2CADDR,I2C_I2C_READ_XFER_MODE , I2CTIMEOUT);
+    if(returncode)
+    {
+        sprintf(buff,"send start error %lX status %lX\r\n",returncode,I2C_I2CMasterStatus());
+        UART_UartPutString(buff);
+        I2CFAIL_Write(1);
+        systemMode = MODE_IDLE;
+        goto cnt;
+    }
+            
+    returncode = I2C_I2CMasterReadByte(I2C_I2C_ACK_DATA,data,I2CTIMEOUT);
+    if(returncode)
+    {
+        sprintf(buff,"read byte error %lX status %lX sda=%d scl =%d\r\n",returncode,I2C_I2CMasterStatus(),I2C_sda_Read(),I2C_scl_Read());
+        UART_UartPutString(buff);
+        I2CFAIL_Write(1);
+        systemMode = MODE_IDLE;
+        goto cnt;
+    }
+            
+    returncode = I2C_I2CMasterSendStop(I2CTIMEOUT);
+    if(returncode)
+    {
+        sprintf(buff,"send stop error %lX status %lX\r\n",returncode,I2C_I2CMasterStatus());
+        UART_UartPutString(buff);
+        I2CFAIL_Write(1);
+        systemMode = MODE_IDLE;
+        goto cnt;
+    }
+    
+    cnt:
+    return returncode;
+}
+
+uint32_t readByteUART(uint8_t *data)
+{
+    uint32_t ub;
+    ub = SCRUART_UartGetByte();
+    if(!(ub & SCRUART_UART_RX_UNDERFLOW))
+    {
+        *data = ub;
+    }
+    return ub & ~0xFF;
+}
+
+uint32_t readByte(uint8_t *data)
+{
+    uint32_t returncode=0;
+    switch(comInterface)
+    {
+        case INTERFACE_I2C:
+            returncode = readByteI2C(data);
+        break;
+        case INTERFACE_UART:
+            returncode = readByteUART(data);
+        break;
+    }
+    sprintf(buff,"Returncode = %X Data=%d\r\n",(unsigned int)returncode,*data);
+    UART_UartPutString(buff);
+
+    return returncode;
+}
 
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
+    uint32 returncode;
     
     UART_Start();
     UART_UartPutString("Started\r\n");
     I2C_Start();
-    
+    SCRUART_Start();
+    uint8_t data;
     char c;
-    uint32 returncode;
-    uint8 data;
-        
+     
     for(;;)
     {
-        cnt:
         c = UART_UartGetChar();
         switch(c)
         {
             case 0:
             break;
             
+            case 'u':
+                UART_UartPutString("I2C Mode\r\n");
+                comInterface = INTERFACE_I2C;
+            break;
+            
+            case 'U':
+                UART_UartPutString("UART Mode\r\n");
+                comInterface = INTERFACE_UART;
+            break;
+           
+            case 'e':
+                UART_UartPutString("Send Echo Command\r\n");
+                writePacket(sizeof(comECHOCMD) , comECHOCMD);
+            break;
+                
             case 'c':
                 UART_UartPutString("Sent Clear String\r\n");
                 writePacket(sizeof(clearCMD),clearCMD);
@@ -206,40 +334,44 @@ int main(void)
             case 'N':
                 UART_UartPutString("NONE Communcation Channel\r\n");
                 writePacket(sizeof(comNONECMD),comNONECMD);
+               
             break;
 
-            // If you are IDLE you can read 1 byte with 'r' or read a while packet with 'p'
+            case 'S':
+                UART_UartPutString("Serial Communcation Channel\r\n");
+                writePacket(sizeof(comSERIALCMD),comSERIALCMD);
+               
+            break;
+
+            // If you are IDLE you can read 1 byte with 'r' or read a whole packet with 'p'
             case 'r':  // Read byte
-                if(i2cpoling != MODE_IDLE)
+                if(systemMode != MODE_IDLE)
                     break;
-                returncode = I2C_I2CMasterSendStart(I2CADDR,I2C_I2C_READ_XFER_MODE , I2CTIMEOUT);
-                returncode |= I2C_I2CMasterReadByte(I2C_I2C_NAK_DATA,&data,I2CTIMEOUT);
-                returncode |= I2C_I2CMasterSendStop(I2CTIMEOUT);
-                sprintf(buff,"Returncode = %X Data=%d\r\n",(unsigned int)returncode,data);
-                UART_UartPutString(buff);
+                readByte(&data);
+                
             break;
             case 'p': // read packet
-                if(i2cpoling == MODE_IDLE)
-                    readPacket();
-                break;
+                if(systemMode == MODE_IDLE)
+                    readPacketI2C();
+            break;
                     
                 
-            // I2C Modes
+            // System Modes
             case '0':
-                    Pin_1_Write(0);
+                    I2CFAIL_Write(0);
                     UART_UartPutString("Packet Poling Off\r\n");
-                    i2cpoling = MODE_IDLE;
+                    systemMode = MODE_IDLE;
                 break;
                
             case '1':
-                    Pin_1_Write(0);
+                    I2CFAIL_Write(0);
                     UART_UartPutString("Packet Poling On\r\n");
-                    i2cpoling = MODE_PACKET;
+                    systemMode = MODE_PACKET;
             break;
             case '2':
-                    Pin_1_Write(0);
+                    I2CFAIL_Write(0);
                     UART_UartPutString("Read continuous\r\n");
-                    i2cpoling = MODE_STREAMING;
+                    systemMode = MODE_STREAMING;
                     break;
 
       
@@ -262,61 +394,48 @@ int main(void)
             break;
             
             case '?':
+                UART_UartPutString("------Communication Mode------\r\n");
+                UART_UartPutString("u\tI2C Mode\r\n");
+                UART_UartPutString("U\tUART Mode\r\n");
+                
+                UART_UartPutString("------GTT43A Commands------\r\n");
                 UART_UartPutString("N\tDefault Comm None\r\n");
                 UART_UartPutString("I\tDefault Comm I2C\r\n");
+                UART_UartPutString("S\tDefault Comm Serial\r\n");
+                
+                UART_UartPutString("e\tEcho abc\r\n");
                 UART_UartPutString("R\tReset\r\n");
                 UART_UartPutString("c\tSend Clear Screen\r\n");
                 
-                UART_UartPutString("r\tRead one byte if I2C polling is off\r\n");
-                UART_UartPutString("p\tRead Packet if I2C polling is off\r\n");
+                UART_UartPutString("------Communcation Commands------\r\n");
+                UART_UartPutString("r\tRead one byte if IDLE\r\n");
+                UART_UartPutString("p\tRead Packet if IDLE\r\n");
                 
-                
+                UART_UartPutString("------System Mode------\r\n");
                 UART_UartPutString("0\tTurn I2C polling off \r\n");
                 UART_UartPutString("1\tTurn on I2C packet polling\r\n");
                 UART_UartPutString("2\tRead i2c bytes \r\n");
                 
+                UART_UartPutString("------I2C Debugging------\r\n");
                 UART_UartPutString("s\tPrint SCB Status\r\n");
                 UART_UartPutString("z\tSend I2C Reset Sequence\r\n");
                 UART_UartPutString("x\tPrint I2C SCL and SDA value\r\n");
             break;
         }
         
-        if(i2cpoling == MODE_PACKET)
-            readPacket();
-        if(i2cpoling == MODE_STREAMING)
+   
+        switch(systemMode)
         {
-            returncode = I2C_I2CMasterSendStart(I2CADDR,I2C_I2C_READ_XFER_MODE , I2CTIMEOUT);
-            if(returncode)
-            {
-                sprintf(buff,"send start error %lX status %lX\r\n",returncode,I2C_I2CMasterStatus());
-                UART_UartPutString(buff);
-                Pin_1_Write(1);
-                i2cpoling = MODE_IDLE;
-                goto cnt;
-            }
+            case MODE_IDLE:
+            break;
             
-            returncode = I2C_I2CMasterReadByte(I2C_I2C_ACK_DATA,&data,I2CTIMEOUT);
-            if(returncode)
-            {
-                sprintf(buff,"read byte error %lX status %lX sda=%d scl =%d\r\n",returncode,I2C_I2CMasterStatus(),I2C_sda_Read(),I2C_scl_Read());
-                UART_UartPutString(buff);
-                Pin_1_Write(1);
-                i2cpoling = MODE_IDLE;
-                goto cnt;
-            }
-            
-            returncode = I2C_I2CMasterSendStop(I2CTIMEOUT);
-            if(returncode)
-            {
-                sprintf(buff,"send stop error %lX status %lX\r\n",returncode,I2C_I2CMasterStatus());
-                UART_UartPutString(buff);
-                Pin_1_Write(1);
-                i2cpoling = MODE_IDLE;
-                goto cnt;
-            }
-            sprintf(buff,"Returncode = %X Data=%d\r\n",(unsigned int)returncode,data);
-            UART_UartPutString(buff);
+            case MODE_PACKET:
+                readPacket();
+            break;
+                
+            case MODE_STREAMING:
+                readByte(&data);
+            break;
         }
-        
     }
 }
