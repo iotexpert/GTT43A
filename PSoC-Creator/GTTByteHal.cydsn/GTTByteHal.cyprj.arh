@@ -111,6 +111,40 @@
 <file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\main.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_events.o">
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+</file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_ext_types.o">
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+</file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_packet_builder.o">
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+</file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\gtt_parser.o">
 <dep name=".\Generated_Source\PSoC4\CyDMA.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -163,6 +197,29 @@
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
 </file>
 <file name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_protocol.o">
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+</file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_text.o">
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+</file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Cm0Start.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
@@ -639,6 +696,10 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\cyfitter_cfg.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
+<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cymetadata.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\cyutils.o">
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
@@ -654,81 +715,6 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_events.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_ext_types.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_packet_builder.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_protocol.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\gtt_text.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
-<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
-</file>
-<file name=".\Generated_Source\PSoC4\cymetadata.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_parser.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_events.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_packet_builder.h" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_protocol.c" />
-<file name="..\..\GTT-Client-Library\GttClient\gtt_text.c" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -737,7 +723,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0\ARM_GCC_541\Debug\TestDemo.hex">
+<file name=".\CortexM0\ARM_GCC_541\Debug\GTTByteHal.hex">
 <dep name=".\CortexM0\ARM_GCC_541\Debug\gtt_events.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\gtt_ext_types.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\gtt_packet_builder.o" />
@@ -781,7 +767,7 @@
 <dep name=".\CortexM0\ARM_GCC_541\Debug\CyDMA.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\CyLFClk.o" />
 <dep name=".\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o" />
-<dep name=".\CortexM0\ARM_GCC_541\Debug\TestDemo.a" />
+<dep name=".\CortexM0\ARM_GCC_541\Debug\GTTByteHal.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
@@ -793,72 +779,54 @@
 <CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68 type_name="CyDesigner.Common.ProjMgmt.Common.CyCmdLineData" version="2">
 <genericCmdLineData>
 <name v="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0">
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_events.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_parser.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_protocol.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\GTT-Client-Library\GttClient\gtt_text.c" v="-mcpu=cortex-m0 -mthumb -I..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="main.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyfitter_cfg.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cymetadata.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_INT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_I2C.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_MASTER.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_SPI_UART_INT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_sda.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_sda_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_scl.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_scl_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\I2C_SCB_IRQ.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_tx.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_rx.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\UART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="main.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\cyfitter_cfg.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\cymetadata.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_INT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_I2C.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_I2C_MASTER.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_SPI_UART_INT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_UART.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_sda.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_sda_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_scl.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_scl_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\I2C_SCB_IRQ.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_tx.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_rx.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\UART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC4\CyBootAsmGnu.s" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-<name_val_pair name="Generated_Source\PSoC4\CyDMA.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="Generated_Source\PSoC4\cy_em_eeprom.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="\\Mac\Home\Documents\iotexpert-projects\GTT43A\TestDemo.cydsn\CortexM0\ARM_GCC_541\Debug\TestDemo.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_packet_builder.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="..\..\..\GTT-Client-Library\GttClient\gtt_text.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="\\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\TestDemo.cydsn\CortexM0\ARM_GCC_541\Debug\TestDemo.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="Generated_Source\PSoC4\CyDMA.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC4\cy_em_eeprom.c" v="-mcpu=cortex-m0 -mthumb -I..\..\..\GTT-Client-Library\GttClient -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -D GTT_ORIG_PARSER -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="\\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\GTTByteHal.cydsn\CortexM0\ARM_GCC_541\Debug\GTTByteHal.hex" v="-mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\arh\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\TestDemo.cydsn\TestDemo.cyprj -d CY8C4247AZI-M485 -s \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\TestDemo.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\arh\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\GTTByteHal.cydsn\GTTByteHal.cyprj -d CY8C4247AZI-M485 -s \\Mac\Home\Documents\iotexpert-projects\GTT43A\PSoC-Creator\GTTByteHal.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
-</dataGuid>
-<dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
-<CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc type_name="CyDesigner.Common.ProjMgmt.DeviceSelector.CyDeviceSelectorState" version="1">
-<name_val_pair name="Filter Options" v="Series:PSoC 4200M;" />
-</CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc>
-</dataGuid>
-<dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
-<CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b type_name="CyDesigner.Gde.Schematic.Symbolcatalog.CyComponentCatalogControl+CyCompCatalogData" version="1" tab="Cypress">
-<tree_states_tab_names />
-<tree_states />
-</CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
 </dataGuid>
 <dataGuid v="925cc1e1-309e-4e08-b0a1-09a83c35b157">
 <CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtProjectPSoCExe+CyCodeGenDepUserInfo" version="1">
@@ -1022,7 +990,7 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC4\API\intc.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\cy_m0s8_scb_v2_0.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\PSoC4\cy_m0s8_scb_v2_0.cyprimitive</v>
-<v>.\TestDemo.cydwr</v>
+<v>.\GTTByteHal.cydwr</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_70\PSoC4\API\cm0gcc.ld</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_70\PSoC4\API\Cm0RealView.scat</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_70\PSoC4\API\Cm0Start.c</v>
@@ -1155,7 +1123,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131715570841795423" />
+<deps_time v="131735372619812227" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1165,14 +1133,9 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131734772571772975" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131735511389181732" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
-</dataGuid>
-<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
-<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
-<debugger_breakpoint_list />
-</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>

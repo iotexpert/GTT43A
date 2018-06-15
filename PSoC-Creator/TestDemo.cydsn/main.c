@@ -80,7 +80,6 @@ gtt_packet_error_t readPacketI2C(gtt_device *device) //,uint8_t *command, size_t
 {
     
     uint8_t data;
-    gtt_packet_error_t returncode = GTT_PACKET_OK ;
     uint32_t i2cerror;
     
     i2cerror = I2C_I2CMasterSendStart( ((i2cContext_t *)device->Context)->slaveAddress,I2C_I2C_READ_XFER_MODE , ((i2cContext_t *)device->Context)->timeout);
@@ -280,13 +279,12 @@ int main()
         {
             case 0:
             break;
+            
+            ////////////////////// GTT25 Commands  /////////////////
             case 'l':
                 gtt_draw_line(gtt, 0, 0, 480, 272);
             break;
                 
-            case 'a':
-                UART_UartPutString("alive\r\n");
-            break;
             
             case 'c':
                 UART_UartPutString("Clear Screen\r\n");
@@ -333,11 +331,12 @@ int main()
                 UART_UartPutString(buff);
                 break;
                 
-                    
-            case 's': //print parser state
-                sprintf(buff,"Parser State = %d\r\n",gtt->Parser.state);
-                UART_UartPutString(buff);
+
+             /************* Communication Control ****************/
+            case 'a':
+                UART_UartPutString("alive\r\n");
             break;
+
             case 'p':
                 UART_UartPutString("Read Packet \r\n");
                 gtt_parser_process(gtt);
@@ -353,9 +352,8 @@ int main()
             break;
                 
             case '?':
-                UART_UartPutString("s\tPrint Parser State\r\n");
+                UART_UartPutString("-------- GTT Display Functions -------\r\n");
                 UART_UartPutString("l\tDraw a line\r\n");
-                UART_UartPutString("a\tPrint Alive Message\r\n");
                 UART_UartPutString("c\tClear Screen\r\n");
                 UART_UartPutString("R\tReset\r\n");
                 UART_UartPutString("q\tSet text label to asdf\r\n");
@@ -364,6 +362,13 @@ int main()
                 UART_UartPutString("I\tSet I2C as comm channel\r\n");
                 UART_UartPutString("+\tIncrement gauge\r\n");
                 UART_UartPutString("-\tDecrement gauge\r\n");
+                UART_UartPutString("v\tGet and print value of gauge \r\n");
+                UART_UartPutString("-------- System Control Functions -------\r\n");
+                UART_UartPutString("p\tRead One Packet\r\n");
+                UART_UartPutString("z\tSystemMode = IDLE\r\n");
+                UART_UartPutString("Z\tSystemMode = POLLING\r\n");
+                UART_UartPutString("a\tPrint Alive Message\r\n");
+               
             break;    
         }
        
