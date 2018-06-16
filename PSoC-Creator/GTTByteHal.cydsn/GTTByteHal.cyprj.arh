@@ -11,106 +11,6 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
-<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\I2C.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_I2C.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_SCB_IRQ.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_scl.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_sda.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\UART.h" />
-<dep name=".\Generated_Source\PSoC4\UART_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\UART_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
-<dep name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\UART_rx.h" />
-<dep name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\UART_tx.h" />
-<dep name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<dep name=".\Generated_Source\PSoC4\cyPm.h" />
-<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\main.c" />
-</file>
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
-<file name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
-<file name=".\Generated_Source\PSoC4\CyDMA.h" />
-<file name=".\Generated_Source\PSoC4\CyFlash.h" />
-<file name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<file name=".\Generated_Source\PSoC4\CyLib.h" />
-<file name=".\Generated_Source\PSoC4\I2C.h" />
-<file name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
-<file name=".\Generated_Source\PSoC4\I2C_I2C.h" />
-<file name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
-<file name=".\Generated_Source\PSoC4\I2C_PINS.h" />
-<file name=".\Generated_Source\PSoC4\I2C_PVT.h" />
-<file name=".\Generated_Source\PSoC4\I2C_SCBCLK.h" />
-<file name=".\Generated_Source\PSoC4\I2C_SCB_IRQ.h" />
-<file name=".\Generated_Source\PSoC4\I2C_scl.h" />
-<file name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
-<file name=".\Generated_Source\PSoC4\I2C_sda.h" />
-<file name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
-<file name=".\Generated_Source\PSoC4\UART.h" />
-<file name=".\Generated_Source\PSoC4\UART_BOOT.h" />
-<file name=".\Generated_Source\PSoC4\UART_PINS.h" />
-<file name=".\Generated_Source\PSoC4\UART_PVT.h" />
-<file name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
-<file name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
-<file name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
-<file name=".\Generated_Source\PSoC4\UART_rx.h" />
-<file name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
-<file name=".\Generated_Source\PSoC4\UART_tx.h" />
-<file name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
-<file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC4\core_cm0.h" />
-<file name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<file name=".\Generated_Source\PSoC4\cyPm.h" />
-<file name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC4\cyfitter.h" />
-<file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC4\cypins.h" />
-<file name=".\Generated_Source\PSoC4\cytypes.h" />
-<file name=".\Generated_Source\PSoC4\project.h" />
-<file name=".\main.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\gtt_events.o">
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
@@ -120,7 +20,13 @@
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
 </file>
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
 <file name="..\..\..\GTT-Client-Library\GttClient\gtt_events.c" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\gtt_ext_types.o">
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
@@ -132,6 +38,7 @@
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
 </file>
 <file name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.c" />
+<file name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\gtt_packet_builder.o">
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
@@ -196,6 +103,47 @@
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
 </file>
+<file name=".\Generated_Source\PSoC4\CyDMA.h" />
+<file name=".\Generated_Source\PSoC4\CyFlash.h" />
+<file name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<file name=".\Generated_Source\PSoC4\CyLib.h" />
+<file name=".\Generated_Source\PSoC4\I2C.h" />
+<file name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
+<file name=".\Generated_Source\PSoC4\I2C_I2C.h" />
+<file name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
+<file name=".\Generated_Source\PSoC4\I2C_PINS.h" />
+<file name=".\Generated_Source\PSoC4\I2C_PVT.h" />
+<file name=".\Generated_Source\PSoC4\I2C_SCBCLK.h" />
+<file name=".\Generated_Source\PSoC4\I2C_SCB_IRQ.h" />
+<file name=".\Generated_Source\PSoC4\I2C_scl.h" />
+<file name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
+<file name=".\Generated_Source\PSoC4\I2C_sda.h" />
+<file name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
+<file name=".\Generated_Source\PSoC4\UART.h" />
+<file name=".\Generated_Source\PSoC4\UART_BOOT.h" />
+<file name=".\Generated_Source\PSoC4\UART_PINS.h" />
+<file name=".\Generated_Source\PSoC4\UART_PVT.h" />
+<file name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
+<file name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<file name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
+<file name=".\Generated_Source\PSoC4\UART_rx.h" />
+<file name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
+<file name=".\Generated_Source\PSoC4\UART_tx.h" />
+<file name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<file name=".\Generated_Source\PSoC4\cyPm.h" />
+<file name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC4\cypins.h" />
+<file name=".\Generated_Source\PSoC4\cytypes.h" />
+<file name=".\Generated_Source\PSoC4\project.h" />
 <file name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\gtt_protocol.o">
 <dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
@@ -707,6 +655,58 @@
 <dep name=".\Generated_Source\PSoC4\cyutils.c" />
 </file>
 <file name=".\Generated_Source\PSoC4\cyutils.c" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\I2C.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_I2C.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_I2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\UART_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx.h" />
+<dep name=".\Generated_Source\PSoC4\UART_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_device.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_enum.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_events.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_ext_types.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_parser.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_protocol.h" />
+<dep name="..\..\..\GTT-Client-Library\GttClient\gtt_text.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\main.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
@@ -1123,7 +1123,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131735372619812227" />
+<deps_time v="131736247688304833" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1133,7 +1133,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131735511389181732" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131736247911587793" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
