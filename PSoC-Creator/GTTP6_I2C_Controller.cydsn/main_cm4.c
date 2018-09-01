@@ -178,11 +178,13 @@ void uartTask(void *arg)
         
     systemMode = MODE_IDLE;
     
-    int count=50;
     char c;
+    #if 0
+    int count=50;
     int16_t val;
     gtt_text t = gtt_make_text_ascii("asdf");
-        
+        #endif
+    
     //Process any data coming in    
     while (1)
     {
@@ -196,11 +198,23 @@ void uartTask(void *arg)
             
             ////////////////////// GTT25 Commands  /////////////////
             case 'l':
+                printf("Drawing Line\r\n");
                 gtt_draw_line(gtt, 0, 0, 480, 272);
             break;
+           
+            case 'm':
+                printf("Running Login Script\r\n");
+                gtt_run_script(gtt, "MustangElectronicDisplay_SystemManagement\\Screen_Login\\Screen_Login.bin");
+            break;
+           
+             case 'n':
+                printf("Running Login Script\r\n");
+                gtt_run_script(gtt, "MustangElectronicDisplay_SystemManagement\\Screen_DriveMode1\\Screen_DriveMode1.bin");
+            break;
+           
                 
-            
             case 'c':
+                printf("Running Clear Screen\r\n");
                 printf("Clear Screen\r\n");
                 gtt_clear_screen(gtt);
             break;
@@ -208,7 +222,7 @@ void uartTask(void *arg)
             case 'R':
                 gtt_reset(gtt);
             break;
-                    
+#if 0                    
             case 'q':
                 printf("Set Text\r\n");
                 gtt25_set_label_text(gtt,2,t);
@@ -220,13 +234,10 @@ void uartTask(void *arg)
                
             case '9':
                 gtt25_set_slider_value(gtt,3,9);
+
             break;
-                    
-            case 'I':
-                gtt_set_default_channel(gtt, eChannel_I2C);
-            break;
-                    
-            case '+':
+                
+                            case '+':
                 count += 1;
                 if(count>100)
                     count = 100;
@@ -248,6 +259,14 @@ void uartTask(void *arg)
                 printf("Slider Value = %d\r\n",val);
                 break;
 
+
+#endif
+
+            case 'I':
+                printf("Set Default I2C Channel\r\n");
+                gtt_set_default_channel(gtt, eChannel_I2C);
+            break;
+                    
              /************* Communication Control ****************/
             case 'a':
                 printf("alive\r\n");
@@ -272,6 +291,7 @@ void uartTask(void *arg)
                 
             case '?':
                 printf("-------- GTT Display Functions -------\r\n");
+                printf("h\tGo to login screen\r\n");
                 printf("l\tDraw a line\r\n");
                 printf("c\tClear Screen\r\n");
                 printf("R\tReset\r\n");
@@ -293,7 +313,9 @@ void uartTask(void *arg)
        
         if(systemMode == MODE_POLLING)
         {
-            gtt_parser_process(gtt);       
+            uint8_t rval=gtt_parser_process(gtt);
+            if(rval)
+                printf("gtt_parser_process got data\r\n");
         }
         
     }

@@ -1,5 +1,6 @@
 Project Report:BasicTest
 
+Module (GTT43A)
 Screen (Screen1)
 	Script: BasicTest\Screen1\Screen1.bin
 		Run Script: 254 93 Script(ASCII String)

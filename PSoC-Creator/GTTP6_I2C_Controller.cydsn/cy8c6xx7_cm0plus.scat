@@ -40,10 +40,8 @@
 ; Your changes must be aligned with the corresponding defines for the CM4 core in 'xx_cm4_dual.scat',
 ; where 'xx' is the device group; for example, 'cy8c6xx7_cm4_dual.scat'.
 ; RAM
-; RAM
 #define RAM_START               0x08000000
 #define RAM_SIZE                0x00024000
-; Flash
 ; Flash
 #define FLASH_START             0x10000000
 #define FLASH_SIZE              0x00080000

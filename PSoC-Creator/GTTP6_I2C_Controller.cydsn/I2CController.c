@@ -69,6 +69,12 @@ static QueueHandle_t xI2Cm1Queue = NULL;    /* This is the main queue for holdin
 
 void writeBasic(I2Cm_transaction_t *trans)
 {
+    printf("Write Basic Len=%d ",trans->length);
+    for(uint32_t i=0;i<trans->length;i++)
+    {
+        printf("%02X ",trans->data[i]);
+    }
+    printf("\r\n");
     /* Begining of an I2C transaction */
     *trans->bytesProcessed = 0;
     /* First write the register address */
@@ -281,7 +287,8 @@ void readPacketGtt(I2Cm_transaction_t *trans)
     }
     
     *trans->bytesProcessed = cnt;
-      
+    
+    printf("Read packet len=%d\r\n",cnt);
 readGttError:
     
     return ;

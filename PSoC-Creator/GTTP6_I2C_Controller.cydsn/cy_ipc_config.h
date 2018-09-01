@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file cy_ipc_config.h
-* \version 1.10.1
+* \version 1.20
 *
 * \brief
 * This header file is not intended to be part of the IPC driver since it defines
@@ -26,10 +26,8 @@
 #define CY_IPC_CHAN_SYSCALL_CM4         (1u)  /* System calls for the 1st non-CM0 processor */
 #if (CY_CPU_CORTEX_M0P)
     #define CY_IPC_CHAN_SYSCALL         CY_IPC_CHAN_SYSCALL_CM0
-    #define Cy_IPC_SystemPipeIsr        NvicMux1_IRQHandler
 #else
     #define CY_IPC_CHAN_SYSCALL         CY_IPC_CHAN_SYSCALL_CM4
-    #define Cy_IPC_SystemPipeIsr        cpuss_interrupts_ipc_4_IRQHandler
 #endif  /* (CY_CPU_CORTEX_M0P) */
 
 #define CY_IPC_CHAN_SYSCALL_DAP         (uint32_t)(2u)    /**< System calls for the DAP */
@@ -131,8 +129,6 @@ void Cy_IPC_SystemSemaInit(void);
 */
 void Cy_IPC_SystemPipeInit(void);
 /* \} group_ipc_configuration_cypipe */
-
-void Cy_IPC_SystemPipeIsr(void);
 
 #ifdef __cplusplus
 }
