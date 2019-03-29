@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file cy_ipc_config.c
-* \version 1.10.1
+* \version 1.20
 *
 *  Description:
 *  This C file is not intended to be part of the IPC driver. It is the code
@@ -20,8 +20,8 @@
 
 #include "cy_ipc_config.h"
 
-/* Create an array of endpoint structures */
-static cy_stc_ipc_pipe_ep_t        cy_ipc_pipe_sysEpArray[CY_IPC_MAX_ENDPOINTS];
+#if (CY_IPC_CYPIPE_ENABLE)
+static void Cy_IPC_SystemPipeIsr(void);
 
 #define CY_CYPIPE_DEFAULT_CONFIG    \
 {\
@@ -43,6 +43,7 @@ static cy_stc_ipc_pipe_ep_t        cy_ipc_pipe_sysEpArray[CY_IPC_MAX_ENDPOINTS];
     /* .endpointsCallbacksArray  */  cy_ipc_pipe_sysCbArray,\
     /* .userPipeIsrHandler       */  &Cy_IPC_SystemPipeIsr\
 }
+#endif /* CY_IPC_CYPIPE_ENABLE */
 
 /*******************************************************************************
 * Function Name: Cy_IPC_SystemSemaInit
@@ -62,11 +63,11 @@ static cy_stc_ipc_pipe_ep_t        cy_ipc_pipe_sysEpArray[CY_IPC_MAX_ENDPOINTS];
 void Cy_IPC_SystemSemaInit(void)
 {
 /* Create array used for semaphores */
-#if !(CY_CPU_CORTEX_M0P)
-    (void) Cy_IPC_Sema_Init(CY_IPC_CHAN_SEMA, 0ul, NULL);
-#else
+#if ((CY_CPU_CORTEX_M0P) || !(__CM0P_PRESENT))
     static uint32_t ipcSemaArray[CY_IPC_SEMA_COUNT / CY_IPC_SEMA_PER_WORD];
     (void) Cy_IPC_Sema_Init(CY_IPC_CHAN_SEMA, CY_IPC_SEMA_COUNT, ipcSemaArray);
+#else
+    (void) Cy_IPC_Sema_Init(CY_IPC_CHAN_SEMA, 0ul, NULL);
 #endif
 }
 
@@ -90,21 +91,27 @@ void Cy_IPC_SystemSemaInit(void)
 *******************************************************************************/
 void Cy_IPC_SystemPipeInit(void)
 {
-    uint32_t intr;
+    /* Create an array of endpoint structures */
+    static cy_stc_ipc_pipe_ep_t cy_ipc_pipe_sysEpArray[CY_IPC_MAX_ENDPOINTS];
 
-    intr = Cy_SysLib_EnterCriticalSection();
+    Cy_IPC_Pipe_Config(cy_ipc_pipe_sysEpArray);
+
+#if (CY_IPC_CYPIPE_ENABLE)
+    uint32_t intr;
 
     static cy_ipc_pipe_callback_ptr_t cy_ipc_pipe_sysCbArray[CY_IPC_CYPIPE_CLIENT_CNT];
 
     static const cy_stc_ipc_pipe_config_t systemPipeConfig = CY_CYPIPE_DEFAULT_CONFIG;
 
-    Cy_IPC_Pipe_Config(cy_ipc_pipe_sysEpArray);
+    intr = Cy_SysLib_EnterCriticalSection();
 
     Cy_IPC_Pipe_Init(&systemPipeConfig);
 
     Cy_SysLib_ExitCriticalSection(intr);
+#endif /* CY_IPC_CYPIPE_ENABLE */
 }
 
+#if (CY_IPC_CYPIPE_ENABLE)
 /*******************************************************************************
 * Function Name: Cy_IPC_SystemPipeIsr
 ****************************************************************************//**
@@ -112,10 +119,11 @@ void Cy_IPC_SystemPipeInit(void)
 * This is the interrupt service routine for the system pipe.
 *
 *******************************************************************************/
-void Cy_IPC_SystemPipeIsr(void)
+static void Cy_IPC_SystemPipeIsr(void)
 {
-    Cy_IPC_Pipe_ExecCallback(&cy_ipc_pipe_sysEpArray[CY_IPC_EP_CYPIPE_ADDR]);
+    Cy_IPC_Pipe_ExecuteCallback(CY_IPC_EP_CYPIPE_ADDR);
 }
+#endif /* CY_IPC_CYPIPE_ENABLE */
 
 
 /* [] END OF FILE */

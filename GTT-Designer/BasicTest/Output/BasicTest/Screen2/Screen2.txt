@@ -10,7 +10,7 @@ SetBackgroundDrawingColor(0,0,0);
 SetFontWindow(0,0,800,480);
 DisplayBitmap(0,0,0);
 SetupRegion(0,118,78,100,100,1,2);
-SetDefaultChannel(I2C);
+SetDefaultChannel(Serial);
 GTT25BaseObject_ProcessChanges();
 SetManualFlush(Disable);
 ManualFlush();

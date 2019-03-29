@@ -112,7 +112,7 @@ GTT25BaseObject_SetEventHandler(1,Button_Click,6);
 GTT25BaseObject_SetEventHandler(1,GTT25VisualObject_OnKey,7);
 GTT25BaseObject_EndUpdate(1);
 SetupRegion(2,323,77,100,100,1,2);
-SetDefaultChannel(I2C);
+SetDefaultChannel(Serial);
 GTT25BaseObject_ProcessChanges();
 SetManualFlush(Disable);
 ManualFlush();

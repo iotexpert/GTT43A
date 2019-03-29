@@ -37,7 +37,7 @@ i2cSettings_t i2c1 = {
 };
 
 
-int generic_write(gtt_device *device, uint8_t *data, size_t length)
+int i2c_generic_write(gtt_device *device, uint8_t *data, size_t length)
 {
     (void)device;
     uint32 returncode;
@@ -67,11 +67,12 @@ int generic_write(gtt_device *device, uint8_t *data, size_t length)
         
 }
 
-int generic_read(gtt_device *device)
+int i2c_generic_read(gtt_device *device)
 {
     (void)device;
      uint8 data;
-     
+    
+    
     //uint32 returncode;
     Cy_SCB_I2C_MasterSendStart (I2C_HW, ((i2cSettings_t *)device->Context)->slaveAddress,CY_SCB_I2C_READ_XFER,((i2cSettings_t *)device->Context)->timeout,&I2C_context);
     
@@ -80,6 +81,31 @@ int generic_read(gtt_device *device)
     Cy_SCB_I2C_MasterSendStop(I2C_HW,((i2cSettings_t *)device->Context)->timeout,&I2C_context);
     return data;
 }
+
+
+int uart_generic_read(gtt_device *device)
+{
+    (void)device;
+ 
+    if(Cy_SCB_GetNumInRxFifo(UART_GTT_HW) == 0)
+        return -1;
+    return (int)UART_GTT_Get();
+    
+}
+
+int uart_generic_write(gtt_device *device, uint8_t *data, size_t length)
+{
+    (void)device;
+    uint32 returncode;
+    
+   
+    printf("length = %d ",length);
+    
+    Cy_SCB_UART_PutArray(UART_GTT_HW,data,length);
+    return length;
+            
+}
+
 
 
 gtt_packet_error_t readPacketI2C(gtt_device *device) //,uint8_t *command, size_t *dataLength, uint8_t *inbuff, uint32_t buffSize)
@@ -226,8 +252,8 @@ gtt_events myEvents = {
 
     
 gtt_device gtt_device_instance = {
-        .Write = generic_write,
-        .Read = generic_read,
+        .Write = uart_generic_write,
+        .Read = uart_generic_read,
         .ReadPacket = readPacketI2C,
         .rx_buffer = rx_buffer,
         .rx_buffer_size = sizeof(rx_buffer),
@@ -254,21 +280,40 @@ void uartTask(void *arg)
     UART_Start();
     setvbuf( stdin, NULL, _IONBF, 0 ); 
     
+    UART_GTT_Start();
+  
+    #if 0
+        uint8_t x;
+    while(1)
+    {
+        while(Cy_SCB_GetNumInRxFifo(UART_GTT_HW))
+        {
+            
+            x = UART_GTT_Get();
+            printf("%02X\r\n",x);
+        }
+        
+    }
+
+    #endif
+    
     gtt_device *gtt = &gtt_device_instance;
         
     systemMode = MODE_IDLE;
     
     int count=50;
-    char c;
+    
     int16_t val;
     gtt_text t = gtt_make_text_ascii("asdf");
         
+    char c;
     //Process any data coming in    
     while (1)
     {
         c=0;
         if(Cy_SCB_GetNumInRxFifo(UART_HW))
             c = getchar();
+
         switch(c)
         {
             case 0:

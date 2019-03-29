@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GTTProject FileFormatRevision="104" FlowControl="Off" CommunicationChannel="I2C" ProjectName="BasicTest" Theme="Glossy" GTTProduct="GTT43A" StartScreenIndex="0" UseLoader="False" UseGlobalBitmaps="False" xmlns="clr-namespace:GTT.Project.Common;assembly=GTT.Project.Common" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+<GTTProject FileFormatRevision="104" BuzzFeedback="False" MotorFeedback="False" BacklightBrightness="40" FlowControl="Off" CommunicationChannel="Serial" ProjectName="BasicTest" Theme="Glossy" GTTProduct="GTT43A" StartScreenIndex="0" UseLoader="False" UseGlobalBitmaps="False" xmlns="clr-namespace:GTT.Project.Common;assembly=GTT.Project.Common" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <GTTProject.GlobalRegions>
     <RegionSlotCollection />
   </GTTProject.GlobalRegions>
