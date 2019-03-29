@@ -96,11 +96,6 @@ int uart_generic_read(gtt_device *device)
 int uart_generic_write(gtt_device *device, uint8_t *data, size_t length)
 {
     (void)device;
-    uint32 returncode;
-    
-   
-    printf("length = %d ",length);
-    
     Cy_SCB_UART_PutArray(UART_GTT_HW,data,length);
     return length;
             
@@ -301,10 +296,7 @@ void uartTask(void *arg)
         
     systemMode = MODE_IDLE;
     
-    int count=50;
-    
-    int16_t val;
-    gtt_text t = gtt_make_text_ascii("asdf");
+ //   gtt_text t = gtt_make_text_ascii("asdf");
         
     char c;
     //Process any data coming in    
@@ -320,6 +312,33 @@ void uartTask(void *arg)
             break;
             
             ////////////////////// GTT25 Commands  /////////////////
+            case '1':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\SplashScreen3\\SplashScreen3.bin");
+            break;
+            case '2':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_Login\\Screen_Login.bin");
+            break;
+            
+            case '3':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_DriveMode1\\Screen_DriveMode1.bin");
+            break;
+            case '4':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_UserManagement1\\Screen_UserManagement1.bin");
+            break;
+            case '5':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_UserManagement2\\Screen_UserManagement2.bin");
+            break;   
+                
+            case '6':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_Fingerprint1\\Screen_Fingerprint1.bin");
+            break; 
+                
+            case '7':
+                gtt_run_script(gtt,"MustangElectronicDisplay_SystemManagement\\Screen_RFID1\\Screen_RFID1.bin");
+            break;
+        
+            
+            
             case 'l':
                 gtt_draw_line(gtt, 0, 0, 480, 272);
             break;
@@ -334,46 +353,15 @@ void uartTask(void *arg)
                 gtt_reset(gtt);
             break;
                     
-            case 'q':
-                printf("Set Text\r\n");
-                gtt25_set_label_text(gtt,2,t);
-            break;
-                       
-            case '2':
-                gtt25_set_slider_value(gtt,3,2);
-            break;
-               
-            case '9':
-                gtt25_set_slider_value(gtt,3,9);
-            break;
-                    
+    
+             /************* Communication Control ****************/
             case 'I':
                 gtt_set_default_channel(gtt, eChannel_I2C);
             break;
-                    
-            case '+':
-                count += 1;
-                if(count>100)
-                    count = 100;
-                gtt25_set_gauge_value(gtt,9,count);
-            break;    
-                
-            case '-':
-                if(count > 0)
-                    count -= 1;
-                gtt25_set_gauge_value(gtt,9,count);
-            break;
-                
-            case 'v':
-                gtt25_get_gauge_value(gtt,9,&val);
-                printf("Gauge Value = %d\r\n",val);
-                break;
-            case 's':
-                gtt25_get_slider_value(gtt,3,&val);
-                printf("Slider Value = %d\r\n",val);
-                break;
 
-             /************* Communication Control ****************/
+            case 'U':
+                gtt_set_default_channel(gtt, eChannel_Serial);
+            break;
             case 'a':
                 printf("alive\r\n");
             break;
@@ -394,17 +382,20 @@ void uartTask(void *arg)
                 
             case '?':
                 printf("-------- GTT Display Functions -------\r\n");
+                printf("1\tSplashScreen3\r\n");
+                printf("2\tScreen_Login\r\n");
+                printf("3\tScreen_DriveMode1\r\n");
+                printf("4\tScreen_UserManagement1\r\n");
+                printf("5\tScreen_UserManagement2\r\n");
+                printf("6\tScreen_Fingerprint1\r\n");
+                printf("7\tScreen_RFID1\r\n");
+                
                 printf("l\tDraw a line\r\n");
                 printf("c\tClear Screen\r\n");
                 printf("R\tReset\r\n");
-                printf("q\tSet text label to asdf\r\n");
-                printf("2\tSet slider to 2\r\n");
-                printf("9\tSet slider to 9\r\n");
-                printf("I\tSet I2C as comm channel\r\n");
-                printf("+\tIncrement gauge\r\n");
-                printf("-\tDecrement gauge\r\n");
-                printf("v\tGet and print value of gauge \r\n");
                 printf("-------- System Control Functions -------\r\n");
+                printf("I\tSet I2C as comm channel\r\n");
+                printf("U\tSet UART as comm channel\r\n");
                 printf("p\tRead One Packet\r\n");
                 printf("z\tSystemMode = IDLE\r\n");
                 printf("Z\tSystemMode = POLLING\r\n");
